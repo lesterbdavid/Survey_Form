@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Survey Form">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Lester David">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+<body>
+    <h1 id="title">Guest Feedback Form</h1>
+    <p id="description"><i>Getting things right is part of what we do, and we really like to hear your feedback about your stay with us</i></p>
+
+    <form id="survey-form">
+        <div class="form-control">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Juan D. Cruz" required />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="juan@example.com" required />
+        </div>
+
+        <div class="form-control">
+            <label for="tel" id="tel-label">Contact</label>
+            <input type="tel" id="tel" placeholder="Contact" min="0" max="99" required />
+        </div>
+
+        <div class="form-control">
+            <label for="role">How did you hear about us?</label>
+            <select name="role" id="dropdown">
+                <option disabled selected value>Select</option>
+                <option value="tripadvisor">TripAdvisor</option>
+                <option value="website">Website</option>
+                <option value="blog">Blog/Blogsite</option>
+                <option value="exhibit">Exhibit/Expo</option>
+                <option value="ota">Online Travel Agency</option>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="google">Google Search</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>Would you recommend View Park Hotel to a friend?</label>
+
+            <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend" value="definitely"/>Definitely</label>
+            <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend" value="maybe"/>Maybe</label>
+            <label for="recommend-3"><input type="radio" id="recommend=3" name="recommend" value="not-sure"/>Not sure</label>
+        </div>
+
+        <div class="form-control">
+            <label for="feature">What is your favorite feature of View Park Hotel?</label>
+            <select name="feature" id="feature">
+                <option disabled selected value>Select</option>
+                <option value="booking">Booking</option>
+                <option value="contact">Contact support</option>
+                <option value="staff">Hotel staff</option>
+                <option value="rooms">Room cleanliness</option>
+                <option value="service">On-site services</option>
+                <option value="food-drink">Food & Drink</option>
+                <option value="resolution">Quick resolution of problems</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>What would you like to see us improved? <small>(check all that apply)</small></label>
+
+            <h3>Quality</h3>
+            <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1"/>Online image</label>
+            <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2"/>Reservation</label>
+            <label for="improve-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3"/>Room cleanliness</label>
+            <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4"/>In-room facilities</label>
+            <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5"/>Spa service</label>
+            <label for="improve-6"><input type="checkbox" name="improve" id="improve-6" value="improve-6"/>Food & Drink</label>
+            <label for="improve-7"><input type="checkbox" name="improve" id="improve-7" value="improve-7"/>Wi-fi connectivity</label><br>
+
+            <h3>Service</h3>
+            <label for="improve-8"><input type="checkbox" name="improve" id="improve-8" value="improve-8"/>Security officer</label>
+            <label for="improve-9"><input type="checkbox" name="improve" id="improve-9" value="improve-9"/>Front office staff</label>
+            <label for="improve-10"><input type="checkbox" name="improve" id="improve-10" value="improve-10"/>Housekeeping staff</label>
+            <label for="improve-11"><input type="checkbox" name="improve" id="improve-11" value="improve-11"/>Maintenance officer</label>
+            <label for="improve-12"><input type="checkbox" name="improve" id="improve-12" value="improve-12"/>Restaurant attendant</label>
+            <label for="improve-13"><input type="checkbox" name="improve" id="improve-13" value="improve-13"/>Food presentation</label>
+            <label for="improve-14"><input type="checkbox" name="improve" id="improve-14" value="improve-14"/>IT officer/Tech Support</label>
+            <label for="improve-15"><input type="checkbox" name="improve" id="improve-15" value="improve-15"/>Therapist</label>
+            <label for="improve-16"><input type="checkbox" name="improve" id="improve-16" value="improve-16"/>Value for money</label>
+        </div>
+
+        <div class="form-control">
+            <label for="comments">We would like to hear your comments and suggestions.</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
