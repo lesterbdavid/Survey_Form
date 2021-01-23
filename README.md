@@ -10,4 +10,3 @@ Use the feedback form to improve product and services
 
 * To understand customers
 * To measure customers' satisfaction
-
