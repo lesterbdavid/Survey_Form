@@ -1,6 +1,6 @@
 # Survey Form
 
-A feedback form for View Park Hotel
+Guest feedback Form project for View Park Hotel
 
 ## Purpose
 
